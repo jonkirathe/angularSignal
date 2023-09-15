@@ -1,5 +1,8 @@
 # AngularSignals
-
+Live Demo: https://e-shop-ke.vercel.app/dashboard
+<p align="center">
+  <img src="https://github.com/Jonnykratz/readme-images/blob/main/ezgif.com-gif-maker.gif?raw=true" alt=" Demo" width="700" height="400" />
+</p>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
 ## Development server
