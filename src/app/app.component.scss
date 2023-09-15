@@ -62,3 +62,9 @@ tr:nth-child(even) {
 .total-price {
   color: cornsilk
 }
+
+.shadow {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 10px 0 rgba(231, 225, 66, 0.24),0 10px 30px 0 rgba(127, 232, 160, 0.96);
+}
