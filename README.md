@@ -1,5 +1,5 @@
 # AngularSignals
-Live Demo: https://e-shop-ke.vercel.app/dashboard
+Live Demo: https://angular-signals-nine.vercel.app/
 <p align="center">
   <img src="https://github.com/Jonnykratz/readme-images/blob/main/ezgif.com-gif-maker.gif?raw=true" alt=" Demo" width="700" height="400" />
 </p>
