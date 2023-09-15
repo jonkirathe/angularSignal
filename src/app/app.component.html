@@ -1,0 +1,65 @@
+<div class="grid-container">
+  <div class=" header">
+    <h1>Shop your favourite animal</h1>
+    <h4>Get it at a discount</h4>
+  </div>
+  <div class="box sidebar">
+    Introduction To:
+    <ul>
+      <li>Signal with Angular v16+</li>
+      <li>Grid Layout(No Bootstrap)</li>
+      <li>Others</li>
+    </ul>
+  </div>
+  <div class="box content">
+    <h2><strong>Shopping Cart </strong> </h2>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>NAME</th>
+        <th>PRICE</th>
+        <th>QUANTITY</th>
+        <th>ACTION</th>
+      </tr>
+      <tr *ngFor="let product of cart(); let index=index;">
+        <td>{{index + 1}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price | currency: ' KES '}}</td>
+        <td>{{product.qty}}</td>
+        <td><button (click)="deleteCartItem(index)" class="button delete-button">Delete</button></td>
+      </tr>
+    </table>
+    <h2 class="total-price">TOTAL QTY: <strong [style.color]="color()">{{totalQuantity()}} </strong></h2>
+    <h2 class="total-price">TOTAL PRICE: <strong [style.color]="color()">{{totalPrice() | currency: ' KES '}} </strong></h2>
+    <br/>
+    <hr/>
+    <div>
+      <h2>Kenyan Animals For Sale</h2>
+      <table class="products-table">
+        <tr>
+          <th>#</th>
+          <th>NAME</th>
+          <th>PRICE</th>
+          <th>QUANTITY</th>
+          <th>DESCRIPTION</th>
+          <th>SELECT QUANTITY</th>
+          <th>ACTION</th>
+        </tr>
+        <tr *ngFor="let product of products(); let index=index;">
+          <td>{{index + 1}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price | currency: ' KES '}}</td>
+          <td>{{product.qty}}</td>
+          <td>{{product.description}}</td>
+          <select
+            (change)="quantitySelected($any($event.target).value)">
+            <option disabled value="">Select a quantity</option>
+            <option *ngFor="let quantity of quantityList()">{{ quantity }}</option>
+          </select>
+          <td><button class="button buy-button" (click)="addToCart(product, index)">Buy</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class=" footer">created By <strong>angularKE 2023</strong></div>
+</div>
