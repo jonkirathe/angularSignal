@@ -1,4 +1,6 @@
 # AngularSignals
+[![Love Angular badge](https://img.shields.io/badge/angular-love-blue?logo=angular&angular=love)](https://www.github.com/angular/angular)
+
 Live Demo: https://angular-signals-nine.vercel.app/
 <p align="center">
   <img src="https://github.com/Jonnykratz/readme-images/blob/main/ezgif.com-gif-maker.gif?raw=true" alt=" Demo" width="700" height="400" />
